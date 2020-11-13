@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textSize="40sp"
+        android:layout_margin="25dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#606060"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="CLEAR"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#606060"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="/"
+            android:onClick="operationClick"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:backgroundTint="#000000"
+                android:gravity="center"
+                android:text="1"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:text="2"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:text="3"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#292929"
+                android:gravity="center"
+                android:text="*"
+                android:onClick="operationClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView />
+            "
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:backgroundTint="#000000"
+                android:gravity="center"
+                android:text="4"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:text="5"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:text="6"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#292929"
+                android:gravity="center"
+                android:text="+"
+                android:onClick="operationClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView />
+            "
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:backgroundTint="#000000"
+                android:gravity="center"
+                android:text="7"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:text="8"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:text="9"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#292929"
+                android:gravity="center"
+                android:text="-"
+                android:onClick="operationClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView />
+            "
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:backgroundTint="#000000"
+                android:gravity="center"
+                android:text="."
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:text="0"
+                android:onClick="numberClick"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF000000"
+                android:gravity="center"
+                android:text="D"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#292929"
+                android:backgroundTint="#ff0000"
+                android:gravity="center"
+                android:text="="
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <TextView />
+            "
+
+        </TableRow>
+        "
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
